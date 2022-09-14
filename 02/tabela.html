@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head> <h1>Tabelas</h1>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> "Aula04 - Links e Tabelas </title> <!--O nome Aula04 aparece não aparecerá para o usuário-->
+</head>
+
+<body>
+
+	<a href="C:\programacaoweb626\index.html"> Home <a>
+	<a href="Empresa.html"> Empresa <a>
+	<a href="contato.html"> Contato <a>
+	<a href=""> Tabelas <a>
+		<br>
+		<br>
+
+<table border="1">
+	
+	<tr>
+		<td>
+			<img src="C:\programacaoweb626\img\carro.jpeg" height="100">
+		</td>
+
+		<td>
+			Coluna 02 - Linha 01
+		</td>
+
+	</tr>
+	<tr>
+		<td>
+			Coluna 01 - Linha 02
+		</td>
+
+		<td>
+			Coluna 02 - Linha 02
+		</td>
+
+	</tr>
+
+</table>
+
+	<h3>Listagens</h3>
+
+<table border="3" width="400"> <!--Ou seja, terá espessua de 3 pxls largura de 400 pxls, se no lugar dos 400 for colocado 50%, então a tabela ocupará 50% da tela do monitor que está sendo usado.-->
+
+	<tr>
+		<td> Código </td>
+		<td> Descrição </td>
+		<td> Valor (R$) </td>
+	</tr>
+
+	<tr>
+		<td>00001</td>
+		<td>Notebook</td>
+		<td>2500,00</td>
+	</tr>
+
+	<tr>
+		<td>00002</td>
+		<td>Monitor</td>
+		<td>500,00</td>
+	</tr>
+
+	<tr>
+		<td>00003</td>
+		<td>Roteador Wi-Fi</td>
+		<td>150,00</td>
+	</tr>
+
+</table>
+
+
+	<h3>Table Head Tag "<<th>th></h3>
+	Definir que aquela <b>td</b> será o cabeçalho da tabela, para isso basta inserir na primeira <b><<tr>tr> por <<tr>th></tr></b>" , nesse caso, a 1ª linha ficará em Negrigo".
+
+	<br>
+
+	<br>
+		
+<table border="4" width="50%"> <!--Ou seja, terá espessua de 3 pxls largura de 400 pxls, se no lugar dos 400 for colocado 50%, então a tabela ocupará 50% da tela do monitor que está sendo usado.-->
+
+	<tr>
+		<th> Código </th>
+		<th> Descrição </th>
+		<th> Valor (R$) </th>
+	</tr>
+
+	<tr>
+		<td>00001</td>
+		<td>Notebook</td>
+		<td>2500,00</td>
+	</tr>
+
+	<tr>
+		<td>00002</td>
+		<td>Monitor</td>
+		<td>500,00</td>
+	</tr>
+
+	<tr>
+		<td>00003</td>
+		<td>toral/td>
+		<td>150,00</td>
+	</tr>
+
+</table>
+
+<h3>Mesclagens de Colunas e Linhas </h3>
+	Como fazer mesclagens de colunas ou linha? <b><<tr>td> usa-se a propriedade colspan</tr></b>.
+
+	<br>
+
+	<br>
+		
+<table border="" width="60%"> <!--Ou seja, terá espessua de 3 pxls largura de 400 pxls, se no lugar dos 400 for colocado 50%, então a tabela ocupará 50% da tela do monitor que está sendo usado.-->
+
+	<tr>
+		<th> Código </th>
+		<th> Descrição </th>
+		<th> Valor (R$) </th>
+	</tr>
+
+	<tr>
+		<td>00001</td>
+		<td>Notebook</td>
+		<td>2500,00</td>
+	</tr>
+
+	<tr>
+		<td>00002</td>
+		<td>Monitor</td>
+		<td>500,00</td>
+	</tr>
+
+	<tr>
+		<td colspan="2">total </td> <!-- Nesse caso, foram unidas a coluna código com a coluna descrição, formando apenas 1 coluna, é o efeito MESCLAGEM-->
+		<td>3000,00</td>
+	</tr>
+
+</table>
+
+
+<h3>Mesclagens de Colunas e Linhas CONJUGADAS na mesma Tabela </h3>
+	Como fazer mesclagens de colunas ou linha? <b><<tr>td> usa-se a propriedade colspan</tr></b>.
+
+	<br>
+
+	<br>
+		
+<table border="" width="70%"> <!--Ou seja, terá espessua de 3 pxls largura de 400 pxls, se no lugar dos 400 for colocado 50%, então a tabela ocupará 50% da tela do monitor que está sendo usado.-->
+
+	<tr>
+		<th> Código </th>
+		<th> Descrição </th>
+		<th> Valor (R$) </th>
+	</tr>
+
+	<tr>
+		<td>00001</td>
+		<td>Notebook</td>
+		<td>2500,00</td>
+	</tr>
+
+	<tr>
+		<td>00002</td>
+		<td>Monitor</td>
+		<td>500,00</td>
+	</tr>
+
+	<tr>
+		<td colspan="2">total </td> <!-- Nesse caso, foram unidas a coluna código com a coluna descrição, formando apenas 1 coluna, é o efeito MESCLAGEM COLS=colunas-->
+		<td>3000,00</td>
+	</tr>
+
+	<tr>
+		<td rowspan="2">Encargos</td><!-- Nesse caso, foram unidas a linha código com a linha descrição, formando apenas 1 coluna, é o efeito MESCLAGEM ROWS= linhas-->
+		<td>Juros</td>
+		<td>5,00</td>
+	</tr>
+
+	<tr>
+		<td>Multa</td>
+		<td>9,00</td>
+	</tr>	
+
+</table>
+</body>
+</html>
+<br>
+<br>
+<!--BASE DE ESTUDOS
+	É importante colocar o caminho exato de onde está localizada a foto que será 
+	inserida no código e não errar o nome com sua extensão.
+	No caso, o arquivo está na pasta img que está dentro da pasta programacaoweb626, que está dentro na unidade C
+	Se não colocar "border = espessura da borda, em número inteiro" dentro da tag <table>, ficará sem bordas a tabela.
+-->
