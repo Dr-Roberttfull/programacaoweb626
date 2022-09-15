@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<body>
+
+	<a href="C:\programacaoweb626\programacaoweb626\pagina\contato.html"> Home <a>
+	<a href="empresa.html"> Empresa <a>
+	<a href=""> Contato <a>
+	<a href="tabela.html"> Tabelas <a>	
+
+
+
+<h2> Contato</h2>
+
+
+<p>SQL Server armazena os dados que definem a configuração do servidor e todas as suas tabelas em um conjunto especial de tabelas conhecidas como tabelas do sistema. Usuários não podem consultar nem atualizar diretamente as tabelas do sistema. A informações das tabelas do sistema são disponibilizadas por meio de exibições do sistema. Para obter mais informações, consulte
+
+<h3>Recompilações reduzidas para cargas de trabalho usando tabelas temporárias em vários escopos</h3>
+SQL Server 2019 (15.x) em todos os níveis de compatibilidade do banco de dados reduz as recompilações para cargas de trabalho usando tabelas temporárias em vários escopos. Esse recurso também está habilitado no Banco de Dados SQL do Azure em nível de compatibilidade do banco de dados 150 para todos os modelos de implantação. Antes desse recurso, ao fazer referência a uma tabela temporária com uma instrução DML (linguagem de manipulação de dados) (SELECT, INSERT, UPDATE, DELETE), se a tabela temporária tivesse sido criada por um lote de escopo externo, isso resultaria em uma recompilação da instrução DML cada vez que ela fosse executada. Com essa melhoria, o SQL Server executa verificações adicionais leves para evitar recompilações desnecessárias:
+
+Verifique se o módulo de escopo externo usado para criar a tabela temporária em tempo de compilação é a mesma usada para execuções consecutivas.
+Controle quaisquer alterações de DDL (linguagem de definição de dados) feitas na compilação inicial e compare-as com as operações de DDL para execuções consecutivas.
+O resultado final é uma redução de recompilações desnecessárias e sobrecarga de CPU.
+
+<h3>Tabelas do sistema</h3>
+SQL Server armazena os dados que definem a configuração do servidor e todas as suas tabelas em um conjunto especial de tabelas conhecidas como tabelas do sistema. Usuários não podem consultar nem atualizar diretamente as tabelas do sistema. A informações das tabelas do sistema são disponibilizadas por meio de exibições do sistema. Para obter mais informações, consulte Exibições do Sistema (Transact-SQL).
+
+<h3>Tabelas largas</h3>
+As tabelas largas usam colunas esparsas para aumentar para 30.000 o total de colunas que uma tabela pode ter. Colunas esparsas são colunas comuns que têm um armazenamento otimizado para valores nulos. Elas reduzem os requisitos de espaço para valores nulos às custas de maior sobrecarga para recuperar valores não nulos. Uma tabela ampla definiu um conjunto de colunas, que é uma representação em XML sem-tipo que combina todas as colunas esparsas de uma tabela em uma saída estruturada. O número de índices e estatísticas também é aumentado para 1.000 e 30.000, respectivamente. O tamanho máximo de uma linha de tabela larga é de 8.019 bytes. Portanto, a maior parte dos dados contidos em qualquer linha específica deve ser NULL. O número máximo de colunas não esparsas mais as colunas computadas de uma tabela larga continua sendo 1.024.
+
+
+</body>
+</html>
