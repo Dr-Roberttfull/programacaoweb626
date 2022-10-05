@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+	<title> Minha Primeira Página em CSS para Estilização de Sites </title> <!--O nome Aula04 aparece não aparecerá para o usuário-->
+
+</head>
+
+<body>
+
+	<ul class = "navbar">
+		<li><a href="index.html"> Home |</a>
+		<li><a href="links\pensamento.html"> Pensamento |</a>
+		<li><a href="links\cidade.html"> Cidade |</a>
+		<li><a href="links.html"> links |</a>
+	</ul>
+
+	<h1>Minha primeira página CSS</h1>
+
+<p>Bem vindos à minha página estilizada!
+
+<p>Minha página não contém imagens(por enquanto rsrsr), mas pelo
+menos está estilizada!
+
+Ela contém links, ainda que eles não levem
+a lugar algum…
+
+<p>Deveria haver mais textos aqui porém eu
+ainda não decidi o que escrever.
+
+<!-- <<<<<REGRAS DE BOAS PRÁTICAS >>>>> Date e assine sua página, isto é educado! -->
+<address>Construida em 15 de dezembro de 2004<br>
+  por mim mesmo.</address>
+
+</body>
+</html>
