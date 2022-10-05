@@ -2,11 +2,11 @@
 
     padding-left: 11em;
 
-     font-family: Georgia, "Times New Roman",
+     font-family: Georgia, "Arial",
           Times, serif;
 
-    color: purple;
-    background-color: #d8da3d }
+    color: blue;
+    background-color: #0000ff }
 
     ul.navbar {
 
@@ -31,11 +31,11 @@
   ul.navbar a {
     text-decoration: none }
   a:link {
-    color: blue }
+    color: yellow }
   a:visited {
-    color: purple }
+    color: green }
 
     address {
-    margin-top: 1em;
-    padding-top: 1em;
+    margin-top: 2em;
+    padding-top: 2em;
     border-top: thin dotted }
