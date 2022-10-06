@@ -1,6 +1,6 @@
 th{
 	border: 1px solid black;
-	background: #b2beff;
+	background: #00FFCC;
 	padding: 10px;
 }
 td{
@@ -14,28 +14,28 @@ table{
 }
 
 .impar{
-	background-color: #C1CDC1;
+	background-color: #FFFF99;
 
 }
 
 .par{
-	background-color: #E0EEE0;
+	background-color: #FF6600;
 }
 
 .total{
-	background-color: #EEE0E5;
+	background-color: #9999FF;
 }
 
 #container{
-	width: 500px;
+	width: 700px;
 	position: absolute;
-	left: 400px;
-	right: 400px;
+	left: 500px;
+	right: 500px;
 	border-collapse: collapse;
 }
 
 tr:hover {
-  background-color: gray;
+  background-color: blue;
 }
 
 
