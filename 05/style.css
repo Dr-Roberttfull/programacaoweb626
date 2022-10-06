@@ -6,7 +6,7 @@ body {
         Times, serif;
 
   color: blue;
-  background-color:	#FAF0E6 }
+  background-color:	#fae6e6 }
 
   ul.navbar {
 
@@ -31,9 +31,9 @@ body {
 ul.navbar a {
   text-decoration: none }
 a:link {
-  color: yellow }
+  color: rgb(255, 234, 0) }
 a:visited {
-  color: yellow }
+  color: rgb(255, 0, 0) }
 
   address {
   margin-top: 2em;
