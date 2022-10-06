@@ -4,83 +4,43 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Formatar Tabela Usando CSS</title>
-	<style type="text/css">
-		
-
-		#container{
-			border-color: blue;
-			width: 700px;
-			height: 700px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-
-		}
-
-		#menu{
-			background-color: rgb(100, 130, 100);
-		}
-		#conteudo{
-			background-color: #41b6e1 ;
-		}
-		#rodape{
-			background-color: rgb(240, 238, 100);
-			width:500px;
-			height: 35px;
-			text-align: center;
-			position: absolute;
-			bottom: 250px;
-		}
-		.copy{
-			font-style: italic;
-			font-weight: bold;
-		}
-
-
-		div{
-			border-style: solid;
-			border-width: 5px 10px 5px 5px;
-			border-color: rgb(135, 208, 222) rgb(0, 13, 128) rgb(128, 128, 128) rgb(255, 0, 149);
-		}
-
-	</style>
+	<title>Tabela com css</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div id="container">
 
-<div id="container">
+<a href="https://dr-roberttfull.github.io/programacaoweb626/"> PÁGINA PRINCIPAL PORTIFOLIO <a>
 	
-	<a href="https://dr-roberttfull.github.io/programacaoweb626/"> PÁGINA PRINCIPAL PORTIFOLIO <a>
-	
-	<h1>Estudo do Div e Span com Css</h1>
+	<h1>FORMATANDO A TABELA COM CSS</h1>
 
-	<div id="menu">
-		Home | Quem Somos | Contato
-	</div>
-
-	<div id="conteudo">
-		bloco para o conteúdo do site
-	</div>
-
-	<div id="rodape">
-		<span class="copy">copyright &copy;</span> Todos os direitos reservados 
+	<table align="center">
 		
-	</div> 
+		<th>loja</th>
+		<th>janeiro</th>
+		<th>fevereiro</th>
 
+		<tr class="impar">
+			<td>filial 01</td>
+			<td>120</td>
+			<td>320</td>
+		</tr>
 
+		<tr class="par">
+			<td>filial 02</td>
+			<td>120</td>
+			<td>120</td>
+		</tr>
 
+		<tr class="total">
+			<td>total</td>
+			<td>240</td>
+			<td>440</td>
+		</tr>
 
+	</table>
+	
 </div>
 
 </body>
 </html>
-
-<!-- /* 
-	
-FUNDAMENTAL.....
-SABER COMO DETERMINAR O QUE É:
-UMA DIV
-UMA CLASSE
-UM OBJETO 
-
-*/ -->
