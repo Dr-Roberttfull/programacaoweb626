@@ -1,0 +1,39 @@
+#container {
+	width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#cabecalho {
+	background-color: rgb(232, 51, 186);
+	color: white;
+	text-align: center;
+}
+h1{
+	margin-bottom :0px;
+}
+
+#menu {
+	background-color: rgb(100, 170, 164);
+	height:200px;width:100px;
+	float:left;
+}
+
+p:hover{
+	background-color: rgb(255, 0, 217);
+}
+
+#rodape {
+	background-color: rgb(210, 180, 180);
+	clear:both;
+	text-align:center;
+}
+
+#conteudo{
+	 background-color:rgb(124, 200, 200);
+	 height:200px;
+	 width:400px;
+	 float:left;
+	 color: blue;
+
+}
