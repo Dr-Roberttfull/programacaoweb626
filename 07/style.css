@@ -1,0 +1,44 @@
+th{
+	border: 1px solid black;
+	background: #b2beff;
+	padding: 10px;
+}
+td{
+	border: 1px solid black;
+	padding: 10px;
+}
+table{
+	border-collapse: collapse;
+	width: 400px;
+
+}
+
+.impar{
+	background-color: #C1CDC1;
+
+}
+
+.par{
+	background-color: #E0EEE0;
+}
+
+.total{
+	background-color: #EEE0E5;
+}
+
+#container{
+	width: 500px;
+	position: absolute;
+	left: 400px;
+	right: 400px;
+	border-collapse: collapse;
+}
+
+tr:hover {
+  background-color: gray;
+}
+
+
+
+
+
