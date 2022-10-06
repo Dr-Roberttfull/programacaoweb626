@@ -1,0 +1,19 @@
+.conteudo{
+	font-size: 30px;
+}
+
+.fontserif{
+	font-family: "Time New Roman", "Abhaya Libre", "Cinzel", "PT Serif", "sans-serif;";
+	font-size: 5.0em;
+	font-style: oblique;
+}
+.fontsans-serif{
+	font-family: "Verdana", " Lombok Typeface", "Jaden", "Ikaros", "sans-serif;";
+	font-size: 2.5em;
+	font-style: normal;
+}
+.fontmonospace{
+	font-family: "Courier New", "Bitstream Vera Sans Mono", "Monaco", "Anonymous" "sans-serif;";
+	font-size: 1.25em;
+	font-style: oblique;
+}
