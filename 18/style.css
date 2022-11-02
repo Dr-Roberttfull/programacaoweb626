@@ -1,0 +1,15 @@
+.pessoa {
+    color: brown;
+}
+
+.pessoa[data-idade = '30'] {
+    color: blue;
+}
+
+.pessoa::before {
+    content: 'Nome: ';
+}
+
+.pessoa::after  {
+    content:'idade: ' attr(data-idade) ' Anos' ' - C.P.F: ' attr(data-cpf);
+}
