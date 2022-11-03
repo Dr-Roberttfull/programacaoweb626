@@ -7,7 +7,7 @@
 }
 Footer p{ 
 	position: relative;
-	float: right;
+	float: left;
 	color: red;
 }
 .imagem img{
