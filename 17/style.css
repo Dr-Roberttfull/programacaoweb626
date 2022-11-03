@@ -1,0 +1,91 @@
+#container {
+	width: 1000px;
+	border: 1px solid gray;
+	background: rgb(230, 222, 173);
+	height: 1050px;
+	float: left;
+}
+
+#container footer{
+	position: relative;
+	color: rgb(60, 0, 255);
+	bottom: -150px;
+    text-align: left;
+}
+article {
+	position: relative;
+	width: 590px;
+	float: left;
+	padding: 10px;
+	margin: 5px;
+}
+article section {
+	padding: 10px;
+	margin: 10px;
+	background: rgb(193, 230, 176);
+}
+
+aside {
+	position: relative;
+	width: 360px;
+	float: left;
+	padding: 5px;
+	margin: 5px;
+} 
+
+nav a{
+	color: rgb(254, 4, 4);
+	font-size: 20px;
+	text-decoration: none;
+	padding: 10PX;
+    font-style: oblique;
+	
+}
+a:hover {
+	background: white;
+}
+.imagem img{
+	position: relative;
+	float: left;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 5px;
+}
+p {
+	line-height: 24px;
+	text-align: justify;
+}
+aside img {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	float: left;
+	padding: 10px;
+	border-radius: 20px;
+}
+header {
+	background: rgba(150, 150, 130, 1.0);
+	height: 50px;
+	text-align: left;
+	color: blue;
+}
+
+aside section {
+	background: rgb(203, 236, 181);
+	margin: 5px;
+	padding: 5px;
+}
+time {
+	padding: 10px;
+	margin: 5px;
+}
+h3 {
+	position: relative;
+	color: red;
+	font-size: 20px;
+	text-align: left;
+	top: 10px;
+}
+footer {
+    text-align: left;
+}
