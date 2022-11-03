@@ -1,0 +1,37 @@
+#container {
+	background: rgb(100, 209, 122);
+	width: 1080px;
+	border: 1px solid black;
+	float: left;
+	padding: 10px;
+}
+Footer p{ 
+	position: relative;
+	float: right;
+	color: red;
+}
+.imagem img{
+	border-radius: 20px;
+	float: left;
+	padding: 10px;
+	margin: 10px;
+}
+p {
+	text-align: justify;
+	line-height: 24px;
+	padding: 5px;
+
+}
+nav {
+	padding: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+}
+
+a:hover{
+	background: rgb(139, 117, 117);
+}
