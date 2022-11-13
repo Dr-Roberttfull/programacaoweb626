@@ -1,0 +1,84 @@
+body {
+	margin: 100px;
+}
+
+#container {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	float: left;
+	margin: 10px;
+	
+}
+
+.vermelha {
+	background: red;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 60px 130px 0px 130px;
+
+}
+.laranja {
+	background: orange;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 130px 60px 130px 0px;
+}
+
+.verde {
+	background: green;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 130px 0px 130px 60px;
+}
+.roxo {
+	background: purple;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 0px 130px 60px 130px;
+}
+
+
+#container2 {
+	width: 400px;
+	height: 400px;
+	padding: 10px;
+	margin: 10px;
+	float: left;
+	position: relative;
+}
+
+.vermelha2 {
+	background: red;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 200px 0px 0px 0px;
+
+}
+.laranja2 {
+	background: orange;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 0px 200px 0px 0px;
+}
+
+.verde2 {
+	background: green;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 0px 0px 0px 200px;
+}
+.roxo2 {
+	background: purple;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 0px 0px 200px 0px;
+}
