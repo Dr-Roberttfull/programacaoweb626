@@ -1,84 +1,38 @@
-body {
-	margin: 100px;
-}
-
-#container {
-	width: 400px;
-	height: 400px;
-	position: relative;
-	float: left;
-	margin: 10px;
+#box{
+	height: 300px;
+	width: 300px;
+	
+	margin-left: 500px;
 	
 }
-
-.vermelha {
-	background: red;
-	width: 200px;
-	height: 200px;
-	float: left;
-	border-radius: 60px 130px 0px 130px;
-
+#box h1{
+	text-align: center;
+	font-size: 30px;
+	color: red;
+	
 }
-.laranja {
-	background: orange;
-	width: 200px;
-	height: 200px;
-	float: left;
-	border-radius: 130px 60px 130px 0px;
+#box:hover{
+	animation-name: minhaAnimacao;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	
 }
-
-.verde {
-	background: green;
-	width: 200px;
-	height: 200px;
-	float: left;
-	border-radius: 130px 0px 130px 60px;
-}
-.roxo {
-	background: purple;
-	width: 200px;
-	height: 200px;
-	float: left;
-	border-radius: 0px 130px 60px 130px;
-}
-
-
-#container2 {
-	width: 400px;
-	height: 400px;
-	padding: 10px;
-	margin: 10px;
-	float: left;
-	position: relative;
-}
-
-.vermelha2 {
-	background: red;
-	width: 200px;
-	height: 200px;
-	float: left;
-	border-radius: 200px 0px 0px 0px;
-
-}
-.laranja2 {
-	background: orange;
-	width: 200px;
-	height: 200px;
-	float: left;
-	border-radius: 0px 200px 0px 0px;
-}
-
-.verde2 {
-	background: green;
-	width: 200px;
-	height: 200px;
-	float: left;
-	border-radius: 0px 0px 0px 200px;
-}
-.roxo2 {
-	background: purple;
-	width: 200px;
-	height: 200px;
-	float: left;
-	border-radius: 0px 0px 200px 0px;
-}
+@keyframes minhaAnimacao {
+	0%{
+		background: red;
+	}
+	33%{
+		background: green;
+		transform: rotate(90deg);
+		transition: 0s 10s;
+	}
+	66%{
+		background: blue;
+		transform: rotate(180deg);
+		transition: 0s 10s;
+	}
+	99%{
+		background: yellow;
+		transform: rotate(270deg);
+		transition: 0s 10s;
+	}
