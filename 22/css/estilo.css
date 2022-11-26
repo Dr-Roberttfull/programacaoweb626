@@ -1,0 +1,197 @@
+#conteudo {
+	background: linear-gradient( to bottom, LightBlue, rgb(243, 148, 100));
+	float: left;
+	margin-top: 45px;
+	padding-top: 10px;
+	
+}
+
+*{
+	margin: 20;
+	padding: 20;
+}
+
+body{
+	font-size: 15px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	background: #edcaca
+	
+}
+
+#navegacao {
+
+	color: black;
+	background: rgb(215, 208, 205);
+	border: 2px solid #090909;
+	height: 60px;
+	position: fixed;
+	width: 150%;
+	top: 0;
+}
+
+#area{
+
+	width: 650px;
+	margin: 0 auto;
+}
+
+#assinatura{
+	width: 650px;
+}
+
+#area-principal{
+
+	width: 600px;
+	margin: 30px auto 30px;
+	
+}
+
+#logo{
+	float: left;
+	width: 20px;
+	margin-top: 10px;
+
+}
+
+nav a {
+	text-decoration: none;
+	margin: 12px;
+	float: right;
+	text-align: center;
+	position: relative;
+	top: 8px;
+	color: white;
+}
+
+nav a:hover{
+	background: rgb(230, 230, 99);
+	align-items: stretch;
+}
+
+#postagem{
+	background: rgb(234, 229, 171);
+	padding: 10px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+#postagem2{
+	background: rgb(239, 243, 194);
+	padding: 10px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+
+#img-postagem2{
+	background:url(..//img/imagem7.jpg);
+	background: rgb(239, 243, 194);
+	padding: 10px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+#cadastro{
+	background: pink;
+}
+
+h2{
+	color: #b9c941;
+}
+
+#rodapeprincipal{
+	background: pink;
+	background-color: #a3a1ab;
+	width: 450px;
+}
+
+a{
+
+	text-decoration: none;	
+	padding: 5px 10px;
+}
+
+a:link {
+	color: #070907;
+
+}
+
+
+a:visited {
+
+	color: #838383;
+}
+
+
+a:hover{
+color: rgb(238, 122, 122)
+
+}
+
+
+a:active {
+
+	color: #535353;
+}
+
+
+.verde{
+
+	color: #b9c941;
+
+
+}
+
+.data-postagem{
+
+	font-size: 14px;
+	border-bottom: 1px solid #1be536;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.data-postagem2{
+
+	font-size: 14px;
+	border-bottom: 1px solid #1be536;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.img-postagem{
+float: left;
+margin: 0 10px 5px 0;
+border-radius: 10%;
+box-shadow: 10px 10px 5px #b6b4b4;
+}
+
+.img-postagem1{
+	float: left;
+	margin: 0 10px 5px 0;
+	border-radius: 10%;
+	box-shadow: 10px 10px 5px #b6b4b4;
+	height: 100px;
+	width: 300px;
+}
+
+.img-postagem2{
+	float: left;
+	margin: 0 10px 5px 0;
+	border-radius: 10%;
+	box-shadow: 10px 10px 5px #b6b4b4;
+	height: 100px;
+	width: 300px;
+}
+
+.postado{
+	border-left: 5px solid #f00808;
+	padding-left: 5px;
+	display: block;
+	margin-top: 10px;
+	text-align: justify
+
+}	
+
+.login{
+	color: red;
+}

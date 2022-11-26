@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cadastro</title>
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+
+</head>
+
+<body>
+	<div id="cadastro">
+
+		<h1>Cadastro</h1>
+
+		<div id="for">
+
+		<form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post">
+
+			Login : <br>
+			<input type="text" name="login"><br>
+
+			Senha : <br>
+			<input type="password" name="senha"><br>
+			Confirmar senha : <br>
+			<input type="password" name="confirmarsenha"><br>
+
+			Nome : <br>
+			<input type="text" name="nome"><br>
+
+			Sexo : <br>
+			<input type="radio" value="Masculino" name="sexo">Masculino<br>
+			<input type="radio" value="Feminino" name="sexo">Feminino<br>
+			<input type="radio" value="Outros" name="sexo">Outros<br><br/>
+
+			Email : <br>
+			<input type="Email" name="email"><br><br>
+
+			Interesses : <br>
+			<input type="checkbox" value="Futebol" name="interesses">Futebol<br>
+			<input type="checkbox" value="Politica" name="interesses">Politica<br>
+			<input type="checkbox" value="Economia" name="interesses">Economia<br>
+			<input type="checkbox" value="Carros" name="interesses">Carros<br>
+			<input type="checkbox" value="Celebridades" name="interesses">Celebridades<br><br>
+
+			Estado : <br>
+			<select name="estado">
+				<option value="" selected>selecione o estado</option>
+				<option value="CE">ceara</option>
+				<option value="PI">piaui</option>
+				<option value="MA">maranhão</option>
+				
+			</select><br/>
+
+			Observações : <br>
+			<textarea name="observacao"></textarea><br>
+			<br/>
+
+			<input type="submit" value="Enviar">
+
+		</form>
+
+	</div>
+
+</body>
+</html>
