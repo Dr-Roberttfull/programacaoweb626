@@ -1,0 +1,62 @@
+.conteudo {
+	background: #dcdcdc;
+	box-sizing: border-box;
+	border: 1px solid blue;
+}
+.linha {
+	background: #ffebcd;
+	box-sizing: border-box;
+	padding: 5px;
+}
+.coluna {
+	background: ;
+	box-sizing: border-box;
+	height: 100%;
+	position: relative;
+	padding: 5px;
+}
+
+.img1 {
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	height: 600px;
+	padding: 5px
+}
+.img2 {
+	width: 100%;
+	height: 190px;
+}
+.img3 {
+	box-sizing: border-box;
+	width: 100%;
+	height: 190px;
+	
+}
+.img4 {
+	box-sizing: border-box;
+	width: 100%;
+	height: 190px;
+	float: right;
+	
+}
+.img5 {
+	box-sizing: border-box;
+	width: 100%;
+	height: 190px;
+	
+}
+.img6 {
+	box-sizing: border-box;
+	width: 100%;
+	height: 190px;
+	float: right;
+	
+}
+.img7 {
+	box-sizing: border-box;
+	width: 100%;
+	height: 190px;
+	float: right;
+
+}
