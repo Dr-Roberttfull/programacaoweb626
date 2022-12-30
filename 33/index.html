@@ -1,0 +1,267 @@
+Disciplina:Introdução a Programação Web -2022.2
+Trabalho Final - Api com jQuery
+Professor Mestre jefferson silva
+Discente: Francisco Roberto de Sousa e Silva
+
+
+<html>
+<head>
+    <title>Trabalho JQuery Webservice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+ 
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#mybtn").click(function () {
+
+                var cep = $("#cep").val();
+
+                $("#rua").val("...");
+                $("#bairro").val("...");
+                $("#cidade").val("...");
+                $("#uf").val("...");
+                $("#ibge").val("...");
+
+                var url = "https://viacep.com.br/ws/" + cep + "/json/?callback=?";
+                $.getJSON(url, function (retorno) {
+                    if (!("erro" in retorno)) {
+
+                        $("#rua").val(retorno.logradouro);
+                        $("#bairro").val(retorno.bairro);
+                        $("#cidade").val(retorno.localidade);
+                        $("#uf").val(retorno.uf);
+                        $("#ibge").val(retorno.ibge);
+                    } 
+                    else {
+
+                        alert("CEP não encontrado.");
+                    }
+                });
+            });
+
+
+            $("#btnAd").click(function () {
+                var dataAd = $("#dataAd").val();
+                var adicao = $("#adicao").val();
+                var url = `http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.datasoma.logic?string=${dataAd};${adicao}`;
+                $.getJSON(url, function (retorno) {
+                    if (!("erro" in retorno)) {
+        
+                        $("#diaAd").val(retorno.dia);
+                        $("#mesAd").val(retorno.mes);
+                        $("#anoAd").val(retorno.ano);
+                        $("#extensoAd").val(retorno.extenso);
+                    }
+                    else {
+                        alert("Erro");
+                    }
+                });
+            });
+
+
+            $("#btnDiff").click(function () {
+                var dataDiffIni = $("#dataDiffIni").val();
+                var dataDiffFi = $("#dataDiffFi").val();
+                var url = `http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.datadiferenca.logic?string=${dataDiffIni};${dataDiffFi}`;
+                $.getJSON(url, function (retorno) {
+                    if (!("erro" in retorno)) {
+
+                        $("#diff").val(retorno.diferenca);
+                    } 
+                    else {
+                        alert("Erro");
+                    }
+                });
+            });
+
+
+            $("#btnConv").click(function () {
+                var dataConv = $("#dataConv").val();
+                var url = `http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.dataconverte.logic?string=${dataConv}`;
+                $.getJSON(url, function (retorno) {
+                    if (!("erro" in retorno)) {
+
+                        $("#convert").val(retorno.dataconvertida);
+                    }
+                    else {
+                        alert("Erro");
+                    }
+                });
+            });
+
+
+            $("#btn1").click(function () {
+                var data1 = $("#data1").val();
+                var url = "http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.dataextenso.logic?string=" + data1;
+                $.getJSON(url, function (retorno) {
+                    if (!("erro" in retorno)) {
+                        
+                        $("#dia").val(retorno.dia);
+                        $("#mes").val(retorno.mes);
+                        $("#ano").val(retorno.ano);
+                        $("#extenso").val(retorno.extenso);
+                    }
+                    else {
+                        alert("Erro");
+                    }
+                });
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+
+    <div>
+        <label>Cep:
+            <input name="cep" type="text" id="cep" value="" placeholder="Somente números" size="10"
+                maxlength="9" /></label>
+        <button id="mybtn">Clique</button>
+        <br />
+        <hr>
+
+        <label>Rua:<br />
+            <input name="rua" type="text" id="rua" size="60" /></label><br />
+        <label>Bairro:<br />
+            <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+        <label>Cidade:<br />
+            <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+        <label>Estado:<br />
+            <input name="uf" type="text" id="uf" size="2" /></label><br />
+        <label>IBGE:<br />
+            <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+        <hr>
+
+    </div>
+
+
+    <div>
+        <h1>Data Extenso</h1>
+        <div>Recebe uma data no formato dd/mm/aaaa e retorna um texo com a data por extenso</div>
+
+        <div>URL Exemplo:<a target="_blank"
+                href="http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.dataextenso.logic?string=21/12/2022">
+                http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.dataextenso.logic?string=21/12/2022</a></div>
+
+        <div>Onde 21/12/2022 é o parâmetro passado que deve ser lido do input. </div>
+
+        <br>
+
+
+        <div>
+
+            <label>Data:
+                <input name="data" type="text" id="data1" placeholder="dd/mm/aaaa" size="10" maxlength="10" /></label>
+            <button id="btn1">Clique</button>
+            <br />
+            <hr>
+            <label>Dia:<br />
+                <input name="dia" type="text" id="dia" size="40" /></label><br />
+            <label>Mês:<br />
+                <input name="mes" type="text" id="mes" size="40" /></label><br />
+            <label>Ano:<br />
+                <input name="ano" type="text" id="ano" size="40" /></label><br />
+            <label>Extenso:<br />
+                <input name="extenso" type="text" id="extenso" size="40" /></label><br />
+        </div>
+    </div>
+
+
+    <div>
+        <hr>
+        <h1>Data Soma</h1>
+        <div>Recebe uma data no formato dd/mm/aaaa e um número inteiro. Retorna a data correspondente a soma desse
+            número com data informada.</div>
+
+        <div>URL Exemplo:<a target="_blank"
+                href="http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.datasoma.logic?string=21/12/2022;10">
+                http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.datasoma.logic?string=21/12/2022;10</a></div>
+
+        <div>Onde 21/12/2022 e 10 são os parâmetros passados separados por ; </div>
+        <br>
+        <label>Data:
+            <input type="text" id="dataAd" placeholder="dd/mm/aaaa" size="10" maxlength="10" />
+        </label>
+        <label>Adição:
+            <input type="number" id="adicao" size="10" maxlength="10" />
+        </label>
+        <button id="btnAd">Clique</button>
+        <br />
+        <hr>
+        <label>Dia:<br />
+            <input name="diaAd" type="text" id="diaAd" size="40" /></label><br />
+        <label>Mês:<br />
+            <input name="mesAd" type="text" id="mesAd" size="40" /></label><br />
+        <label>Ano:<br />
+            <input name="anoAd" type="text" id="anoAd" size="40" /></label><br />
+        <label>Extenso:<br />
+            <input name="extensoAd" type="text" id="extensoAd" size="40" /></label><br />
+
+    </div>
+
+
+    <div>
+        <hr>
+        <h1>Data Diferença</h1>
+        <div>Recebe duas datas no formato dd/mm/aaaa. Retorna a diferença em dias entre a duas datas.</div>
+
+        <div>URL Exemplo:<a target="_blank"
+                href="http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.datadiferenca.logic?string=21/12/2022;21/01/2023">
+                http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.datadiferenca.logic?string=21/12/2022;21/01/2023</a>
+        </div>
+
+        <div>Onde 21/12/2022 e 21/01/2023 são os parâmetros passados separados por ; </div>
+        <br>
+
+        <label>Data Inicial:
+            <input type="text" id="dataDiffIni" placeholder="dd/mm/aaaa" size="10" maxlength="10" />
+        </label>
+        <label>Data Final:
+            <input type="text" id="dataDiffFi" placeholder="dd/mm/aaaa" size="10" maxlength="10" />
+        </label>
+        <button id="btnDiff">Clique</button>
+        <br />
+        <hr>
+        <label>Diferença:<br />
+            <input name="diff" type="text" id="diff"/></label><br />
+    </div>
+
+    <div>
+        <hr>
+        <h1>Data Converte</h1>
+        <div>Recebe uma data no formato dd/mm/aaaa. Retorna a data no formato yyyy-mm-dd.</div>
+
+        <div>URL Exemplo:<a target="_blank"
+                href="http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.dataconverte.logic?string=21/12/2022">
+                http://zpfvzz.hospedagemelastica.com.br/netlab/admin/admin.dataconverte.logic?string=21/12/2022</a>
+        </div>
+
+        <div>Onde 21/12/2022 é o parâmetros passado para a api </div>
+        <br>
+
+        <label>Data:
+            <input type="text" id="dataConv" placeholder="dd/mm/aaaa" size="10" maxlength="10" />
+        </label>
+        <button id="btnConv">Clique</button>
+        <br />
+        <hr>
+        <label>Data Convertida:<br />
+        <input name="convert" type="text" id="convert"/></label><br />
+
+    </div>
+
+    <br>
+</body>
+
+</html>
+
+apidatas.html
+Exibindo apidatas.html…
