@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Divs</title>
+
+	<!-- bootstrap - link cdn -->
+	<!-- Bootstrap CSS 4.0.0 -->
+	<link rel="stylesheet" 
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+	crossorigin="anonymous">
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$('#btn3').click(function(){
+				$('.caixa').hide();
+			});
+			$('#btn4').click(function(){
+				$('.caixa').show();
+			});
+			$('#btn1').click(function(){
+				$('#cx01').show();
+			})
+			$('#btn2').click(function(){
+				$('#cx02').show();
+			})
+
+		});
+
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>TRABALHANDO COM JQUERY</h1>
+		</div>
+		<button id="btn1">Caixa 01</button>
+		<button id="btn2">Caixa 02</button>
+		<button id="btn3">Esconder todas</button>
+		<button id="btn4">Mostrar todas</button>
+		<button type="button"
+	            class="btn btn-lg btn-danger teste"
+	            data-bs-toggle="popover"
+	            data-bs-placement="right"
+	            data-bs-content = "Breve detalhes aqui!"
+	            data-bs-trigger = "focus"
+	            title="Detalhes">Detalhes      
+    	</button>
+		<hr />
+		<div class="row">
+
+			<div class="col-md-6">
+
+				<div style="height: 100px; width: 150px; margin: 10px; background:#6cc473;" class="caixa float-left" id="cx01">Caixa 01
+				</div>
+
+				<div style="height: 100px; width: 150px;margin: 10px; background:#6cc473;" class="caixa float-left" id="cx02">Caixa 02
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+</body>
+</html>
